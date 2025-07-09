@@ -158,7 +158,7 @@
       },
       {
         "type": "paragraph",
-        "text": "For our group project during the Esmovia education on React & Node.JS, we developed a tourism agency platform. It uses React for the frontend and Node.js with Express for the backend, along with MongoDB for data storage."
+        "text": "For our group project during the Esmovia education on React & Node.JS, we developed a tourism agency platform. It uses React for the frontend and Node.js with Express for the backend."
       },
       {
         "type": "image",
