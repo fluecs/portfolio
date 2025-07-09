@@ -1,0 +1,143 @@
+[
+	  {
+		"id": 1,
+		"title": "How I Made Preemptive Multitasking",
+		"image": "https://plus.unsplash.com/premium_photo-1681426698212-53e47fec9a2c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3B1fGVufDB8fDB8fHww",
+		"content": [
+		  {
+			"type": "heading",
+			"level": 2,
+			"text": "The Need for Preemptive Multitasking"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "While working on my OS kernel, I noticed that cooperative multitasking left the system vulnerable to misbehaving processes. If one task never yielded control, the whole system froze. To fix this, I decided to implement a preemptive scheduler that could forcibly interrupt tasks and switch to others at defined intervals."
+		  },
+		  {
+			"type": "image",
+			"src": "https://d8it4huxumps7.cloudfront.net/uploads/images/64dc81a4996ff_multiprogramming_vs_multitasking_02.jpg?d=2000x2000",
+			"alt": "CPU and scheduling concept"
+		  },
+		  {
+			"type": "heading",
+			"level": 3,
+			"text": "Designing the Scheduler"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "I wrote an interrupt-driven timer handler that fires periodically and triggers a context switch. Every process had its own stack, registers, and program counter saved, so the system could restore them when resuming. The hardest part was preserving kernel state while switching from user to kernel mode safely."
+		  },
+		  {
+			"type": "image",
+			"src": "https://i.ytimg.com/vi/y1jZtgoEYcQ/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE4gZShjMA8=&rs=AOn4CLCs3PoMLGQi7i9EmPo8UltsCMjc8Q",
+			"alt": "Code snippet on dark screen"
+		  }
+		]
+	  },
+	  {
+		"id": 2,
+		"title": "TicsiOS: My Custom Operating System",
+		"image": "./public/ticsios1.png",
+		"content": [
+		  {	
+			"type": "heading",
+			"level": 2,
+			"text": "What is TicsiOS?"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "TicsiOS is my personal operating system project, built entirely from scratch with its own kernel, drivers, and userland programs. I designed it to be highly educational yet robust, teaching me about every layer of a modern OS."
+		  },
+		  {
+			"type": "image",
+			"src": "./public/ticsios2.png",
+			"alt": "Operating system booting on a screen"
+		  },
+		  {
+			"type": "heading",
+			"level": 3,
+			"text": "Core Features"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "TicsiOS features a modular kernel, a custom FAT-like file system, drivers for USB and VGA, and even a graphical UI. It supports preemptive multitasking, inter-process communication, and a simple shell. Its goal is not to compete with mainstream OSes, but to be a fully-functional, cleanly-architected learning platform."
+		  },
+		  {
+			"type": "image",
+			"src": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+			"alt": "Developer working at night"
+		  }
+		]
+	  },
+	  {
+		"id": 3,
+		"title": "Creating a Custom File System",
+		"image": "https://assets.enterprisestorageforum.com/uploads/2023/09/esf_09012023-disk-imaging-696x447.png",
+		"content": [
+		  {
+			"type": "heading",
+			"level": 2,
+			"text": "Why a New File System?"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "When developing TicsiOS, I realized existing file systems like FAT or EXT4 didn’t meet my goals for speed and simplicity. So I built a new semi-flat, hash-accelerated file system designed to support bulk operations efficiently."
+		  },
+		  {
+			"type": "image",
+			"src": "https://lh6.googleusercontent.com/proxy/9WMNDif_81E3bNjjIY3Iupp6NPhnaeTyVK-hU3flniKIrxAwSj6mP-eV1phwxSGd18Sa8QcbmF8VPN-Ol8kUzO5yw21-bTXizMJAbSH8Ff70W1iS19VNi25bd1hsBg",
+			"alt": "Disk sectors and data layout"
+		  },
+		  {
+			"type": "heading",
+			"level": 3,
+			"text": "Design Approach"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "Using a tree structure with O(1) hash lookups and bulk operation support, the file system is fast even on spinning disks. Lazy rename operations and a secondary hash prevent collisions while maintaining high throughput."
+		  },
+		  {
+			"type": "image",
+			"src": "https://m.media-amazon.com/images/I/614y6FroB-L.jpg",
+			"alt": "Storage device closeup"
+		  }
+		]
+	  },
+	  {
+		"id": 4,
+		"title": "The Tourism Agency Platform",
+		"image": "./mainpage.png",
+		"content": [
+		  {
+			"type": "heading",
+			"level": 2,
+			"text": "Building a Full Stack Web App"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "For a real-world use case, I built a tourism agency platform using React for the frontend and Node.js + Express on the backend. The app allows customers to browse activities, book trips, and manage their bookings."
+		  },
+		  {
+			"type": "image",
+			"src": "./mainpage.png",
+			"alt": "Tourism website mockup"
+		  },
+		  {
+			"type": "heading",
+			"level": 3,
+			"text": "Key Features"
+		  },
+		  {
+			"type": "paragraph",
+			"text": "The backend serves a REST API with JWT authentication. On the frontend, Axios with interceptors securely handles API requests. The UI is fully responsive and optimized for mobile and desktop."
+		  },
+		  {
+			"type": "image",
+			"src": "./book.png",
+			"alt": "Travel booking concept"
+		  }
+		]
+	  }
+	]
+    
