@@ -106,6 +106,48 @@
   },
   {
     "id": 4,
+    "title": "Todo App",
+    "image": "./todo.png",
+    "content": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it can do"
+      },
+      {
+        "type": "paragraph",
+        "text": "For a todo app, this one is very advanced. It allows for the use of not just normal texts, but also lists and checklists, allowing for a more usable interface and more powerful features."
+      },
+      {
+        "type": "image",
+        "src": "./todo.png",
+        "alt": "Todo website"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "A blog portfolio",
+    "image": "./portfolio.png",
+    "content": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Building a Full Stack Web App"
+      },
+      {
+        "type": "paragraph",
+        "text": "What better way to showcase my skills than a blog portfolio? I built this application using React for the frontend. You can view the articles that host a piece of my work, a small piece of the portfolio of projects I have worked on."
+      },
+      {
+        "type": "image",
+        "src": "./portfolio.png",
+        "alt": "Portfolio"
+      }
+    ]
+  },
+  {
+    "id": 6,
     "title": "The Tourism Agency Platform",
     "image": "./mainpage.png",
     "content": [
@@ -121,7 +163,7 @@
       {
         "type": "image",
         "src": "./mainpage.png",
-        "alt": "Tourism website mockup"
+        "alt": "Tourism website"
       },
       {
         "type": "heading",
@@ -135,7 +177,11 @@
       {
         "type": "image",
         "src": "./book.png",
-        "alt": "Travel booking concept"
+        "alt": "Travel booking"
+      },
+      {
+        "type": "paragraph",
+        "text": "Check it out for yourself at: "
       }
     ]
   }
